@@ -7,17 +7,15 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
 
     <div class="wrapper">
-      
-      <!-- <nav>
+
+      <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
-      </nav> -->
+      </nav>
     </div>
   </header>
 
   <RouterView />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
