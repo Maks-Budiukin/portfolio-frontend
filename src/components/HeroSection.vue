@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-common pt-12">
+    <div class="bg-common">
         <div class="flex justify-center items-center ">
             <div
                 class="flex sm:items-center justify-between gap-5 2xl:gap-32 w-full px-5 py-10 2xl:py-20 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
@@ -22,13 +22,13 @@
                     <div class="flex flex-col md:flex-row gap-3">
                         <div class="sm:w-[200px]">
                             <button type="button"
-                                class="w-full sm:text-2xl font-medium bg-[#F0BF6CCC] hover:bg-[#F0BF6C]  duration-300 rounded-lg px-6 py-2">Download
+                                class="w-full sm:text-2xl font-medium bg-[#F0BF6CCC] border-[2px] border-transparent hover:bg-[#F0BF6C]  duration-300 rounded-lg px-6 py-2">Download
                                 CV</button>
                         </div>
 
                         <div class="sm:w-[200px] ">
                             <button type="button"
-                                class="w-full sm:text-2xl text-[#F0BF6C] hover:text-black font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">Contact
+                                class="w-full sm:text-2xl text-[#F0BF6C] hover:text-white font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">Contact
                                 me</button>
                         </div>
                     </div>

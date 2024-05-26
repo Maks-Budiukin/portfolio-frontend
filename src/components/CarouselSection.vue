@@ -21,7 +21,7 @@
 
         <div class="flex items-center h-full">
 
-            <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2"
+            <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2 "
                 @click="changeImage(currentImageIndex - 1)">
                 <svg class="rotate-180" width="24px" height="24px" viewBox="-4.5 0 20 20" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

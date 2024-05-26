@@ -6,58 +6,64 @@
                 <h2 class="font-semibold text-5xl text-white">Portfolio</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">                            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <img src="../../public/goose/0.jpg" alt="My work-1" class="rounded-lg portfolio-picture h-full">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <RouterLink class="text-[#F0BF6C]" to="/projects">About project</RouterLink>
                     </div>
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
                     <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
                     </div>
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
                     <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
                     </div>
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
                     <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
                     </div>
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
                     <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
                     </div>
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
                     <img src="../../public/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
-                    <div class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
+                    <div
+                        class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
-                    <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">See the code</button>
+                        <button class="text-white hover:text-[#F0BF6C] py-2 px-4">About project</button>
                     </div>
                 </div>
             </div>
