@@ -11,7 +11,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/react2.png" alt="react icon">
+                        <img src="../assets/images/skills/react.png" alt="react icon">
                     </div>
                     <div>
                         <p>React</p>
@@ -22,7 +22,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/mongo2.png" alt="react icon">
+                        <img src="../assets/images/skills/mongo.png" alt="react icon">
                     </div>
                     <div>
                         <p>Mongo DB</p>
@@ -33,7 +33,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/redux.png" alt="react icon">
+                        <img src="../assets/images/skills/redux.png" alt="react icon">
                     </div>
                     <div>
                         <p>Redux</p>
@@ -44,29 +44,18 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/vue.png" alt="react icon">
+                        <img src="../assets/images/skills/vue.png" alt="react icon">
                     </div>
                     <div>
                         <p>Vue</p>
                     </div>
                 </div>
 
-                <!-- <div
-                    class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
-
-                    <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/tailwind.png" alt="react icon">
-                    </div>
-                    <div>
-                        <p>Tailwind</p>
-                    </div>
-                </div> -->
-
                 <div
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/sequelize.png" alt="react icon">
+                        <img src="../assets/images/skills/sequelize.png" alt="react icon">
                     </div>
                     <div>
                         <p>Sequelize</p>
@@ -77,7 +66,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/ts.png" alt="react icon">
+                        <img src="../assets/images/skills/ts.png" alt="react icon">
                     </div>
                     <div>
                         <p>Typescript</p>
@@ -88,7 +77,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/restapi2.png" alt="react icon">
+                        <img src="../assets/images/skills/restapi.png" alt="react icon">
                     </div>
                     <div>
                         <p>REST api</p>
@@ -99,40 +88,18 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/git.png" alt="react icon">
+                        <img src="../assets/images/skills/git.png" alt="react icon">
                     </div>
                     <div>
                         <p>Git</p>
                     </div>
                 </div>
 
-                <!-- <div
-                    class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
-
-                    <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/mssql.png" alt="react icon">
-                    </div>
-                    <div>
-                        <p>MSSQL</p>
-                    </div>
-                </div> -->
-
-                <!-- <div
-                    class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
-
-                    <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/pinia.png" alt="react icon">
-                    </div>
-                    <div>
-                        <p>Pinia</p>
-                    </div>
-                </div> -->
-
                 <div
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/htmlcss.png" alt="react icon">
+                        <img src="../assets/images/skills/htmlcss.png" alt="react icon">
                     </div>
                     <div>
                         <p>HTML + CSS</p>
@@ -143,7 +110,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/node.png" alt="react icon">
+                        <img src="../assets/images/skills/node.png" alt="react icon">
                     </div>
                     <div>
                         <p>Node</p>
@@ -154,7 +121,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/nestjs.png" alt="react icon">
+                        <img src="../assets/images/skills/nestjs.png" alt="react icon">
                     </div>
                     <div>
                         <p>Nest JS</p>
@@ -165,7 +132,7 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../../public/js.png" alt="react icon">
+                        <img src="../assets/images/skills/js.png" alt="react icon">
                     </div>
                     <div>
                         <p>Javascript</p>

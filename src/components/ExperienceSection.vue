@@ -18,22 +18,7 @@
                     <div class="">
                         <div class="flex items-center gap-3 mb-4 ml-2">
                             <div class="flex items-center justify-center">
-                                <!-- <span class="text-[96px] leading-3 text-[#F0BF6C] mb-3">•</span> -->
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                    viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
-                                    <metadata>
-                                        Created by potrace 1.15, written by Peter Selinger 2001-2017
-                                    </metadata>
-                                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-                                        fill="#F0BF6C" stroke="none">
-                                        <path d="M6125 12794 c-27 -2 -120 -8 -205 -14 -957 -68 -1973 -394 -2829
--908 -1759 -1055 -2891 -2894 -3073 -4992 -16 -187 -16 -773 0 -960 89 -1022
-397 -1978 918 -2841 1056 -1754 2890 -2879 4984 -3061 187 -16 773 -16 960 0
-1016 88 1973 396 2829 910 1759 1055 2891 2894 3073 4992 16 187 16 773 0 960
--118 1362 -635 2623 -1495 3648 -1071 1277 -2647 2092 -4347 2248 -154 14
--704 26 -815 18z" />
-                                    </g>
-                                </svg>
+                                <Point size="20" />
                             </div>
                             <div>
                                 <h3 class="text-[32px] ">GoToInc</h3>
@@ -79,22 +64,7 @@
                     <div class="">
                         <div class="flex items-center gap-3 mb-4 ml-2">
                             <div class="flex items-center justify-center ">
-
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                    viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
-                                    <metadata>
-                                        Created by potrace 1.15, written by Peter Selinger 2001-2017
-                                    </metadata>
-                                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-                                        fill="#F0BF6C" stroke="none">
-                                        <path d="M6125 12794 c-27 -2 -120 -8 -205 -14 -957 -68 -1973 -394 -2829
--908 -1759 -1055 -2891 -2894 -3073 -4992 -16 -187 -16 -773 0 -960 89 -1022
-397 -1978 918 -2841 1056 -1754 2890 -2879 4984 -3061 187 -16 773 -16 960 0
-1016 88 1973 396 2829 910 1759 1055 2891 2894 3073 4992 16 187 16 773 0 960
--118 1362 -635 2623 -1495 3648 -1071 1277 -2647 2092 -4347 2248 -154 14
--704 26 -815 18z" />
-                                    </g>
-                                </svg>
+                                <Point size="20" />
                             </div>
                             <div>
                                 <h3 class="text-[32px] ">Freelance</h3>
@@ -136,22 +106,7 @@
                     <div class="">
                         <div class="flex items-center gap-3 mb-4 ml-2">
                             <div class="flex items-center justify-center">
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                    viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
-                                    <metadata>
-                                        Created by potrace 1.15, written by Peter Selinger 2001-2017
-                                    </metadata>
-                                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-                                        fill="#F0BF6C" stroke="none">
-                                        <path d="M6125 12794 c-27 -2 -120 -8 -205 -14 -957 -68 -1973 -394 -2829
--908 -1759 -1055 -2891 -2894 -3073 -4992 -16 -187 -16 -773 0 -960 89 -1022
-397 -1978 918 -2841 1056 -1754 2890 -2879 4984 -3061 187 -16 773 -16 960 0
-1016 88 1973 396 2829 910 1759 1055 2891 2894 3073 4992 16 187 16 773 0 960
--118 1362 -635 2623 -1495 3648 -1071 1277 -2647 2092 -4347 2248 -154 14
--704 26 -815 18z" />
-                                    </g>
-                                </svg>
-
+                                <Point size="20" />
                             </div>
                             <div>
                                 <h3 class="text-[32px] ">GoIT</h3>
@@ -186,7 +141,7 @@
 </template>
 
 <script setup>
-
+import Point from './icons/Point.vue'
 </script>
 
 <style lang="scss" scoped></style>
