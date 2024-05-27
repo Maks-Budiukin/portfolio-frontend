@@ -8,7 +8,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/goose/0.jpg" alt="My work-1"
+                    <img src="../../public/projects/goose/0.jpg" alt="My work-1"
                         class="rounded-lg portfolio-picture h-full">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
