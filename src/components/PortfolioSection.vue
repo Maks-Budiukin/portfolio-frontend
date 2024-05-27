@@ -19,8 +19,7 @@
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/work-1.png" alt="My work-1"
-                        class="rounded-lg portfolio-picture">
+                    <img src="../../public/projects/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
@@ -30,8 +29,7 @@
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/work-1.png" alt="My work-1"
-                        class="rounded-lg portfolio-picture">
+                    <img src="../../public/projects/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
@@ -41,8 +39,7 @@
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/work-1.png" alt="My work-1"
-                        class="rounded-lg portfolio-picture">
+                    <img src="../../public/projects/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
@@ -52,8 +49,7 @@
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/work-1.png" alt="My work-1"
-                        class="rounded-lg portfolio-picture">
+                    <img src="../../public/projects/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
@@ -63,8 +59,7 @@
                 </div>
 
                 <div class="col-span-1 portfolio-thumb relative cursor-pointer">
-                    <img src="../assets/images/projects/work-1.png" alt="My work-1"
-                        class="rounded-lg portfolio-picture">
+                    <img src="../../public/projects/work-1.png" alt="My work-1" class="rounded-lg portfolio-picture">
                     <div
                         class="button-container absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] hidden">
                         <button class="text-white hover:text-[#F0BF6C] py-2 px-4">Visit live</button>
