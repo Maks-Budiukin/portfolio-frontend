@@ -35,7 +35,7 @@
                 </div>
                 <div class="lg:flex items-end min-w-[150px]">
                     <div class=" ">
-                        <img src="../../public/pic13.png" alt="Max's photo" class="max-h-[500px]">
+                        <img src="/pic13.png" alt="Max's photo" class="max-h-[500px]">
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-3 p-5">
 
