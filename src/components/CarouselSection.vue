@@ -156,12 +156,22 @@ onMounted(() => {
 
 onUnmounted(() => {
     window.removeEventListener('resize', handleResize)
+    document.documentElement.style.overflow = 'auto'
 })
 
 watch(screenWidth, (val) => {
     if (val) {
         activeImagePosition()
     }
+})
+
+watch(open, (val) => {
+    if (val) {
+        document.documentElement.style.overflow = 'hidden'
+
+        return
+    }
+    document.documentElement.style.overflow = 'auto'
 })
 
 </script>
