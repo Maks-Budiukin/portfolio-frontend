@@ -1,5 +1,5 @@
 <template>
-  <main class="">
+  <main class="bg-common">
 
     <section ref="description" class="scroll-mt-12">
       <DescriptionSection />

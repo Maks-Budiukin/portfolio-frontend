@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        common: 'url(src/assets/images/section-bg.webp)',
+        common: 'url(src/images/section-bg.webp)',
         photo: 'url(../public/pic6.png)'
       }
     }
