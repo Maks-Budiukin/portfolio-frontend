@@ -46,7 +46,7 @@
 
         </div>
         <CarouselModal :open="open" @close="open = false" :images="images" :currentImage="currentImage"
-            :index="currentImageIndex" />
+            v-model:index="currentImageIndex" @index="changeImage(index)" />
     </div>
 </template>
 

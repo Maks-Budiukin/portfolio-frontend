@@ -1,10 +1,10 @@
 <template>
     <Teleport to="body">
-      <div>
+      
         <transition name="fade">
           <div
             v-if="open"
-            class="fixed inset-0 z-[9] opacity-60 bg-[#000]/[0.9] cursor-pointer"
+            class="fixed inset-0 z-[19] opacity-60 bg-[#000]/[0.9] cursor-pointer"
             @click="$emit('close')"
           ></div>
         </transition>
@@ -12,21 +12,19 @@
         <transition :name="'fade'">
           <div
             v-if="open"
-            class="fixed z-[10] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-h-screen overflow-y-auto scroll"
+            class="fixed z-[20] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-h-screen rounded-lg"
             role="dialog"
           >
-            <div
-              class="w-[90vw] rounded-t-lg lg:rounded-lg"
-            >
-              <div class="w-full h-full">
-               <div>
+          
+              
+               <div class="w-[90vw]">
                   <slot name="modal-content" />
                 </div>
               </div>
-            </div>
-          </div>
+            
+         
         </transition>
-      </div>
+     
     </Teleport>
   </template>
   
