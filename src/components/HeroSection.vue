@@ -28,7 +28,7 @@
 
                         <div class="sm:w-[200px] ">
                             <button type="button"
-                                class="w-full sm:text-2xl text-[#F0BF6C] hover:text-white font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">Contact
+                                class="w-full sm:text-2xl text-[#F0BF6C] hover:text-[#000000] font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">Contact
                                 me</button>
                         </div>
                     </div>

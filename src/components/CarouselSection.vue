@@ -8,7 +8,7 @@
                     <ArrowRight size="32" class="rotate-180" />
                 </div>
 
-                <img :src="currentImage" alt="" class="w-full big-image"
+                <img :src="currentImage" alt="" class="w-full rounded-lg big-image"
                     :class="{ 'fade-in': fadeIn, 'fade-out': fadeOut }">
 
 
@@ -59,7 +59,8 @@ const rawImages = [
     { src: 'src/assets/images/projects/goose/goose-2.webp' },
     { src: 'src/assets/images/projects/goose/goose-mf1.webp' },
     { src: 'src/assets/images/projects/goose/goose-3.webp' },
-    { src: 'src/assets/images/projects/goose/goose-4.webp' }
+    { src: 'src/assets/images/projects/goose/goose-4.webp' },
+    { src: 'src/assets/images/projects/goose/goose-mf2.webp' },
 ]
 
 let images = []
