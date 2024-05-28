@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        common: 'url(../../public/sectionbg.webp)'
+        common: 'url(../../public/sectionbg-darker.webp)'
       }
     }
   },
