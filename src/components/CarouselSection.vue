@@ -57,12 +57,12 @@ const currentImageIndex = ref(0)
 
 
 const rawImages = [
-    { src: '/src/assets/images/projects/goose/goose-1.webp' },
-    { src: '/src/assets/images/projects/goose/goose-2.webp' },
-    { src: '/src/assets/images/projects/goose/goose-mf1.webp' },
-    { src: '/src/assets/images/projects/goose/goose-3.webp' },
-    { src: '/src/assets/images/projects/goose/goose-4.webp' },
-    { src: '/src/assets/images/projects/goose/goose-mf2.webp' },
+    { src: '/images/projects/goose/goose-1.webp' },
+    { src: '/images/projects/goose/goose-2.webp' },
+    { src: '/images/projects/goose/goose-mf1.webp' },
+    { src: '/images/projects/goose/goose-3.webp' },
+    { src: '/images/projects/goose/goose-4.webp' },
+    { src: '/images/projects/goose/goose-mf2.webp' },
 ]
 
 // let images = []
