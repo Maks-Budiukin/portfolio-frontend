@@ -1,5 +1,5 @@
 <template>
-    <div ref="skills" class="flex justify-center items-center bg-common">
+    <div ref="skills" class="flex justify-center items-center">
         <div class="w-full px-5 py-6 xl:py-10 2xl:py-20 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
 
             <div class="mb-8">
@@ -110,10 +110,10 @@
                     class="col-span-1 w-full min-w-[100px] lg:min-w-[180px] flex flex-col items-center justify-center bg-[#3D3E42] hover:bg-[#F0BF6C99] duration-300 rounded-lg p-4">
 
                     <div class="w-[50px] lg:w-[100px] mb-4">
-                        <img src="../assets/images/skills/node.png" alt="react icon">
+                        <img src="../assets/images/skills/nodejs.png" alt="react icon">
                     </div>
                     <div>
-                        <p>Node</p>
+                        <p>Node.js</p>
                     </div>
                 </div>
 

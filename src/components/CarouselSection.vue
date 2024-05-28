@@ -44,16 +44,14 @@ const currentImageIndex = ref(0)
 
 
 const rawImages = [
-    { src: '../../public/projects/goose/0.jpg' },
-    { src: '../../public/projects/goose/1.jpg' },
-    { src: '../../public/projects/goose/2.jpg' },
-    { src: '../../public/projects/goose/3.jpg' },
-    { src: '../../public/projects/goose/4.jpg' }
+    { src: '../assets/images/projects/goose/0.jpg' },
+    { src: '../assets/images/projects/goose/1.jpg' },
+    { src: '../assets/images/projects/goose/2.jpg' },
+    { src: '../assets/images/projects/goose/3.jpg' },
+    { src: '../assets/images/projects/goose/4.jpg' }
 ]
 
 let images = []
-
-// import image from '../assets/images/projects/goose'
 
 const setInitialImagesArray = () => {
 

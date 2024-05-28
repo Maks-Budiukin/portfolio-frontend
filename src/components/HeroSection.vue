@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-common">
+    <div class="">
         <div class="flex justify-center items-center ">
             <div
                 class="flex sm:items-center justify-between gap-5 2xl:gap-32 w-full px-5 py-10 2xl:py-20 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
@@ -34,8 +34,8 @@
                     </div>
                 </div>
                 <div class="lg:flex items-end min-w-[150px]">
-                    <div class=" opacity-[0.7] ">
-                        <img src="../../public/pic5.png " alt="Max's photo" class="max-h-[500px]">
+                    <div class=" ">
+                        <img src="../../public/pic13.png" alt="Max's photo" class="max-h-[500px]">
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-3 p-5">
 
