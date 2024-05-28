@@ -98,27 +98,32 @@ const fadeOut = ref(false)
 const initialOffset = ref('')
 
 const changeImage = (idx) => {
-    fadeIn.value = false;
-    fadeOut.value = true;
+    if (idx === currentImageIndex.value) {
+        return
+    }
 
-    setTimeout(() => {
+    else {
+        fadeIn.value = false;
+        fadeOut.value = true;
 
-        if (idx > images.value.length - 1) {
-            currentImageIndex.value = 0;
-            activeImagePosition()
-        }
-        else if (idx < 0) {
-            currentImageIndex.value = images.value.length - 1;
-            activeImagePosition()
-        }
-        else {
-            currentImageIndex.value = idx;
-            activeImagePosition()
-        }
+        setTimeout(() => {
+            if (idx > images.value.length - 1) {
+                currentImageIndex.value = 0;
+                activeImagePosition()
+            }
+            else if (idx < 0) {
+                currentImageIndex.value = images.value.length - 1;
+                activeImagePosition()
+            }
+            else {
+                currentImageIndex.value = idx;
+                activeImagePosition()
+            }
 
-        fadeIn.value = true;
-        fadeOut.value = false;
-    }, 200)
+            fadeIn.value = true;
+            fadeOut.value = false;
+        }, 200)
+    }
 }
 
 const carouselContainer = ref(null)
