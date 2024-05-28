@@ -8,9 +8,11 @@
                     <ArrowRight size="32" class="rotate-180" />
                 </div>
 
-                <img :src="currentImage" alt="" class="w-full sm:rounded-lg cursor-pointer big-image"
-                    @click="open = true" :class="{ 'fade-in': fadeIn, 'fade-out': fadeOut }">
+                <div class="py-4 border-y-[2px] border-[#F0BF6C] sm:border-none">
+                    <img :src="currentImage" alt="" class="w-full sm:rounded-lg cursor-pointer big-image"
+                        @click="open = true" :class="{ 'fade-in': fadeIn, 'fade-out': fadeOut }">
 
+                </div>
 
                 <div class="cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0 right-0 bg-gradient-to-r from-transparent to-[#000000b4] h-full p-3 z-[4]"
                     @click="changeImage(currentImageIndex + 1)">
