@@ -8,7 +8,7 @@
                     <ArrowRight size="32" class="rotate-180" />
                 </div>
 
-                <img :src="currentImage" alt="" class="w-full rounded-lg big-image"
+                <img :src="currentImage" alt="" class="w-full rounded-lg cursor-pointer big-image" @click="open = true"
                     :class="{ 'fade-in': fadeIn, 'fade-out': fadeOut }">
 
 
@@ -43,13 +43,15 @@
 
 
         </div>
+        <CarouselModal :open="open" @close="open = false" :images="images" :currentImage="currentImage"
+            :index="currentImageIndex" />
     </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, watch, onUnmounted } from 'vue';
 import ArrowRight from './icons/ArrowRight.vue'
-
+import CarouselModal from './CarouselModal.vue'
 
 const currentImageIndex = ref(0)
 
@@ -63,14 +65,15 @@ const rawImages = [
     { src: 'src/assets/images/projects/goose/goose-mf2.webp' },
 ]
 
-let images = []
+// let images = []
+const images = ref([])
 
 const setInitialImagesArray = () => {
 
     if (rawImages.length > 1) {
         const midIdx = Math.ceil(rawImages.length / 2)
 
-        images = [
+        images.value = [
             ...rawImages.slice(-midIdx),
             ...rawImages,
             ...rawImages.slice(0, rawImages.length % 2 ? midIdx - 1 : midIdx),
@@ -80,12 +83,12 @@ const setInitialImagesArray = () => {
 }
 
 const currentImage = computed(() => {
-    return images[currentImageIndex.value]?.src
+    return images.value[currentImageIndex.value]?.src
 })
 
 setInitialImagesArray()
 
-
+const open = ref(false)
 
 const fadeIn = ref(true)
 
@@ -98,12 +101,12 @@ const changeImage = (idx) => {
 
     setTimeout(() => {
 
-        if (idx > images.length - 1) {
+        if (idx > images.value.length - 1) {
             currentImageIndex.value = 0;
             activeImagePosition()
         }
         else if (idx < 0) {
-            currentImageIndex.value = images.length - 1;
+            currentImageIndex.value = images.value.length - 1;
             activeImagePosition()
         }
         else {
