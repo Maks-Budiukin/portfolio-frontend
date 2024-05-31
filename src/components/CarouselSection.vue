@@ -69,26 +69,26 @@ const currentImageIndex = ref(0)
 //     { src: '/images/projects/goose/goose-8.webp' },
 // ]
 
-// const rawImages = [
-//     { src: '/images/projects/pse/pse-1.webp' },
-//     { src: '/images/projects/pse/pse-2.webp' },
-//     { src: '/images/projects/pse/pse-3.webp' },
-//     { src: '/images/projects/pse/pse-4.webp' },
-//     { src: '/images/projects/pse/pse-5.webp' },
-//     { src: '/images/projects/pse/pse-6.webp' },
-//     { src: '/images/projects/pse/pse-7.webp' },
-//     { src: '/images/projects/pse/pse-8.webp' },
-//     { src: '/images/projects/pse/pse-9.webp' },
-//     { src: '/images/projects/pse/pse-10.webp' },
-// ]
-
 const rawImages = [
-    { src: '/images/projects/delivery/delivery-1.webp' },
-    { src: '/images/projects/delivery/delivery-2.webp' },
-    { src: '/images/projects/delivery/delivery-3.webp' },
-    { src: '/images/projects/delivery/delivery-4.webp' },
-    { src: '/images/projects/delivery/delivery-5.webp' },
+    { src: '/images/projects/pse/pse-1.webp' },
+    { src: '/images/projects/pse/pse-2.webp' },
+    { src: '/images/projects/pse/pse-3.webp' },
+    { src: '/images/projects/pse/pse-4.webp' },
+    { src: '/images/projects/pse/pse-5.webp' },
+    { src: '/images/projects/pse/pse-6.webp' },
+    { src: '/images/projects/pse/pse-7.webp' },
+    { src: '/images/projects/pse/pse-8.webp' },
+    { src: '/images/projects/pse/pse-9.webp' },
+    { src: '/images/projects/pse/pse-10.webp' },
 ]
+
+// const rawImages = [
+//     { src: '/images/projects/delivery/delivery-1.webp' },
+//     { src: '/images/projects/delivery/delivery-2.webp' },
+//     { src: '/images/projects/delivery/delivery-3.webp' },
+//     { src: '/images/projects/delivery/delivery-4.webp' },
+//     { src: '/images/projects/delivery/delivery-5.webp' },
+// ]
 
 // let images = []
 const images = ref([])
