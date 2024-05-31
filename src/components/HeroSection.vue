@@ -21,15 +21,11 @@
 
                     <div class="flex flex-col md:flex-row gap-3">
                         <div class="sm:w-[200px]">
-                            <button type="button"
-                                class="w-full sm:text-2xl font-medium bg-[#F0BF6CCC] border-[2px] border-transparent hover:bg-[#F0BF6C]  duration-300 rounded-lg px-6 py-2">Download
-                                CV</button>
+                            <Button>Download CV</Button>
                         </div>
 
-                        <div class="sm:w-[200px] ">
-                            <button type="button"
-                                class="w-full sm:text-2xl text-[#F0BF6C] hover:text-[#000000] font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">Contact
-                                me</button>
+                        <div class="sm:w-[200px]  ">
+                            <Button variant="secondary">Contact me</Button>
                         </div>
                     </div>
                 </div>
@@ -37,7 +33,7 @@
                     <div class=" ">
                         <img src="/pic13.png" alt="Max's photo" class="max-h-[500px]">
                     </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-3 p-5">
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-3 px-5 py-5 lg:py-0">
 
                         <div class="hidden lg:flex col-span-1 w-full justify-center">
                             <div class=" border-[2px] w-[1px] border-[#F0BF6C] h-[192px]"></div>
@@ -68,6 +64,7 @@
 </template>
 
 <script setup>
+import Button from './UI/Button.vue'
 import Telegram from './icons/Telegram.vue'
 import Github from './icons/Github.vue'
 import Gitlab from './icons/Gitlab.vue'

@@ -1,12 +1,12 @@
 <template>
-    <div class="flex justify-center items-center bg-common">
+    <div class="flex justify-center items-center">
         <div class="w-full px-5 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
             <div class="flex justify-center items-center">
                 <div
                     class="w-full px-5 py-6 xl:py-10 2xl:pt-20 2xl:pb-10 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
                     <div class="mb-12 lg:hidden">
-                        <h2 class="font-semibold text-6xl sm:text-7xl text-white text-center lg:text-left">
-                            GooseTrack</h2>
+                        <h1 class="font-semibold text-6xl sm:text-7xl text-white text-center lg:text-left">
+                            GooseTrack</h1>
                     </div>
 
                     <div class="flex flex-col lg:flex-row items-center lg:items-start xl:items-center gap-12">
@@ -17,8 +17,8 @@
 
                         <div class="flex flex-col gap-8 ">
                             <div class="hidden lg:block mb-6">
-                                <h2 class="font-semibold text-6xl sm:text-7xl text-white text-center lg:text-left">
-                                    GooseTrack</h2>
+                                <h1 class="font-semibold text-6xl sm:text-7xl text-white text-center lg:text-left">
+                                    GooseTrack</h1>
                             </div>
 
                             <div class=" duration-500 overflow-hidden"
@@ -42,15 +42,11 @@
                             <div
                                 class="flex flex-col md:flex-row gap-3 justify-center sm:items-center lg:justify-start ">
                                 <div class="sm:w-[200px]">
-                                    <button type="button"
-                                        class="w-full sm:text-2xl font-medium border-[2px] border-transparent bg-[#F0BF6CCC] hover:bg-[#F0BF6C]  duration-300 rounded-lg px-6 py-2">Visit
-                                        Live</button>
+                                    <Button>Live</Button>
                                 </div>
 
                                 <div class="sm:w-[200px] ">
-                                    <button type="button"
-                                        class="w-full sm:text-2xl text-[#F0BF6C] hover:text-[#000000] font-medium  hover:bg-[#F0BF6C] border-[2px] border-[#F0BF6C] duration-300 rounded-lg px-6 py-2">View
-                                        code</button>
+                                    <Button variant="secondary">View code</Button>
                                 </div>
                             </div>
 
@@ -71,6 +67,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import CarouselSection from '../components/CarouselSection.vue'
+import Button from '../components/UI/Button.vue'
 import ArrowRight from './icons/ArrowRight.vue'
 // import Collapse from '../components/CollapseComponent.vue'
 const readMore = ref(false)

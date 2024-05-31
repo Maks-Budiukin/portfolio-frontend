@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center items-center bg-common">
+    <div class="flex justify-center items-center">
         <div class="w-full px-5 py-6 xl:py-10 2xl:py-20 md:px-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
 
             <div class="mb-8">
@@ -22,7 +22,7 @@
                         <div class="pl-8 ml-4 border-l-[3px]">
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Backend Development</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Backend Development</p>
                                 </div>
                                 <div>
                                     <p>You spearheaded the development of the backend infrastructure using Express,
@@ -34,7 +34,7 @@
 
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Architecture Design</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Architecture Design</p>
                                 </div>
                                 <div>
                                     <p>You played a pivotal role in designing the overall architecture of the backend,
@@ -45,7 +45,7 @@
 
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Technical Oversight</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Technical Oversight</p>
                                 </div>
                                 <div>
                                     <p>Conducted regular code reviews and provided feedback to ensure adherence to best
@@ -72,7 +72,7 @@
                         <div class="pl-8 ml-4 border-l-[3px]">
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Team Leadership</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Team Leadership</p>
                                 </div>
                                 <div>
                                     <p>As the team lead, you provided guidance and direction to a team of four
@@ -84,7 +84,7 @@
 
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Task Allocation</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Task Allocation</p>
                                 </div>
                                 <div>
                                     <p>Responsible for assigning tasks to team members based on their skills and
@@ -96,7 +96,7 @@
 
                             <div class="mb-4">
                                 <div>
-                                    <h5 class="text-[#F0BF6C] font-semibold">Problem Solving</h5>
+                                    <p class="text-[#F0BF6C] font-semibold">Problem Solving</p>
                                 </div>
                                 <div>
                                     <p>Acted as a point of contact for resolving technical challenges and addressing

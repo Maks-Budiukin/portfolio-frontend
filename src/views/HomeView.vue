@@ -20,9 +20,6 @@
       </div>
     </div>
 
-
-
-
     <section ref="experience" class="scroll-mt-12">
       <ExperienceSection />
     </section>
@@ -58,7 +55,7 @@ const skills = ref(null);
 const contacts = ref(null);
 
 function scrollTo(view) {
-  view.scrollIntoView({ behavior: 'smooth' });
+  view.scrollIntoView();
 }
 
 </script>

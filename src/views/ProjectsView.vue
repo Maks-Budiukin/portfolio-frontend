@@ -8,8 +8,6 @@
     <div class="flex justify-center items-center bg-common sticky top-0 left-0 right-0 z-[10] shadow-lg">
       <div class="w-full px-5 md:px-6 py-6 lg:w-[1000px] xl:w-[1240px] 2xl:w-[1520px]">
         <div class="flex gap-4 text-lg sm:text-xl justify-center lg:justify-end">
-          <!-- <button type="button" class="text-white" @click="scrollTo(hero)">Home</button> -->
-
           <button type="button" class="text-white hover:text-[#F0BF6C] duration-300"
             @click="scrollTo(description)">Description</button>
           <button type="button" class="text-white hover:text-[#F0BF6C] duration-300" @click="scrollTo(myRole)">My

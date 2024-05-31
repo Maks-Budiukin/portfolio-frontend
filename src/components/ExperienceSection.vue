@@ -28,7 +28,7 @@
 
                         <div class="pl-8 ml-4 border-l-[3px]">
                             <div class="mb-4">
-                                <h5>Front-end developer</h5>
+                                <p>Front-end developer</p>
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate illum saepe
@@ -74,7 +74,7 @@
 
                         <div class="pl-8 ml-4 border-l-[3px]">
                             <div class="mb-4">
-                                <h5>Full-stack developer</h5>
+                                <p>Full-stack developer</p>
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate illum saepe
@@ -116,7 +116,7 @@
 
                         <div class="pl-8 ml-4 border-l-[3px]">
                             <div class="mb-4">
-                                <h5>Full-stack developer</h5>
+                                <p>Full-stack developer</p>
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate illum saepe

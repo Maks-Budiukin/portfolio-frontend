@@ -50,7 +50,7 @@ const props = defineProps({
 
 // eslint-disable-next-line no-unused-vars
 const emit = defineEmits([
-    'update:open', 'update:index'
+    'update:open', 'update:index',
 ])
 
 const changeIndex = (idx) => {
