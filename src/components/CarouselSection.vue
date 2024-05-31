@@ -9,12 +9,15 @@
                 </div>
 
                 <div class="py-4 border-y-[2px] border-[#F0BF6C] sm:border-none">
-                    <img :src="currentImage" alt="" class="w-full sm:rounded-lg cursor-pointer big-image"
-                        @click="open = true" :class="{ 'fade-in': fadeIn, 'fade-out': fadeOut }">
+                    <Transition name="fade" mode="out-in">
+                        <img v-if="currentImage" :key="currentImage" :src="currentImage" alt=""
+                            class="w-full sm:rounded-lg cursor-pointer big-image" @click="open = true">
+                    </Transition>
 
                 </div>
 
-                <div class="cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0 right-0 bg-gradient-to-r from-transparent to-[#000000b4] h-full p-3 z-[4]"
+                <div class=" cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0
+                        right-0 bg-gradient-to-r from-transparent to-[#000000b4] h-full p-3 z-[4]"
                     @click="changeImage(currentImageIndex + 1)">
                     <ArrowRight size="32" />
                 </div>
@@ -56,6 +59,7 @@ import ArrowRight from './icons/ArrowRight.vue'
 import CarouselModal from './CarouselModal.vue'
 
 const currentImageIndex = ref(0)
+
 
 
 const rawImages = [
@@ -115,9 +119,6 @@ setInitialImagesArray()
 
 const open = ref(false)
 
-const fadeIn = ref(true)
-
-const fadeOut = ref(false)
 const initialOffset = ref('')
 
 const changeImage = (idx) => {
@@ -126,26 +127,18 @@ const changeImage = (idx) => {
     }
 
     else {
-        fadeIn.value = false;
-        fadeOut.value = true;
-
-        setTimeout(() => {
-            if (idx > images.value.length - 1) {
-                currentImageIndex.value = 0;
-                activeImagePosition()
-            }
-            else if (idx < 0) {
-                currentImageIndex.value = images.value.length - 1;
-                activeImagePosition()
-            }
-            else {
-                currentImageIndex.value = idx;
-                activeImagePosition()
-            }
-
-            fadeIn.value = true;
-            fadeOut.value = false;
-        }, 200)
+        if (idx > images.value.length - 1) {
+            currentImageIndex.value = 0;
+            activeImagePosition()
+        }
+        else if (idx < 0) {
+            currentImageIndex.value = images.value.length - 1;
+            activeImagePosition()
+        }
+        else {
+            currentImageIndex.value = idx;
+            activeImagePosition()
+        }
     }
 }
 
@@ -161,10 +154,6 @@ const activeImagePosition = () => {
     carouselContainer.value.scrollTo(activeImagePositionVal.value - (carouselContainer.value?.offsetWidth - 235) / 2, 0);
 }
 
-onMounted(() => {
-    activeImagePosition()
-})
-
 const screenWidth = ref(1920)
 
 const handleResize = () => {
@@ -173,7 +162,6 @@ const handleResize = () => {
 
 onMounted(() => {
     handleResize()
-
     window.addEventListener('resize', handleResize)
 })
 
@@ -201,15 +189,13 @@ watch(open, (val) => {
 </script>
 
 <style lang="scss" scoped>
-.fade-in {
-    opacity: 1;
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.2s ease;
 }
 
-.fade-out {
+.fade-enter-from,
+.fade-leave-to {
     opacity: 0;
-}
-
-.big-image {
-    transition: opacity 0.2s ease-in-out;
 }
 </style>
