@@ -1,5 +1,5 @@
 <template>
-    <DialogModal :open="open" @close="$emit('update:open', false)">
+    <DialogModal v-if="open" :open="open" @close="$emit('close')">
         <template #modal-content>
 
             <div class="relative w-[90vw] ">
@@ -55,7 +55,7 @@ const transitionName = ref('right')
 
 // eslint-disable-next-line no-unused-vars
 const emit = defineEmits([
-    'update:open', 'update:index',
+    'close', 'update:index',
 ])
 
 // const changeIndex = (idx) => {

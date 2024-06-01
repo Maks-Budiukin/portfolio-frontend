@@ -1,56 +1,58 @@
 <template>
-    <div v-show="!open" class="">
-        <div class="flex items-center">
-            <div class="mb-4 mx-auto relative">
+    <div>
+        <div v-show="!open" class="">
+            <div class="flex items-center">
+                <div class="mb-4 mx-auto relative">
 
-                <div class="cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0 left-0 bg-gradient-to-r from-[#000000b4] to-transparent h-full p-3 z-[4]"
-                    @click="changeImage(currentImageIndex - 1)">
-                    <ArrowRight size="32" class="rotate-180" />
-                </div>
+                    <div class="cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0 left-0 bg-gradient-to-r from-[#000000b4] to-transparent h-full p-3 z-[4]"
+                        @click="onLeft(currentImageIndex - 1)">
+                        <ArrowRight size="32" class="rotate-180" />
+                    </div>
 
-                <div class="py-4 border-y-[2px] border-[#F0BF6C] sm:border-none">
-                    <Transition name="fade" mode="out-in">
-                        <img v-if="currentImage" :key="currentImage" :src="currentImage" alt=""
-                            class="w-full sm:rounded-lg cursor-pointer big-image" @click="open = true">
-                    </Transition>
+                    <div class="py-4 border-y-[2px] border-[#F0BF6C] sm:border-none">
+                        <Transition :name="transitionName" mode="out-in">
+                            <img v-if="currentImage" :key="currentImage" :src="currentImage" alt=""
+                                class="w-full sm:rounded-lg cursor-pointer big-image" @click="handleOpenModal">
+                        </Transition>
 
-                </div>
+                    </div>
 
-                <div class=" cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0
+                    <div class=" cursor-pointer fill-[#FFFFFF] flex sm:hidden items-center justify-center absolute top-0
                         right-0 bg-gradient-to-r from-transparent to-[#000000b4] h-full p-3 z-[4]"
-                    @click="changeImage(currentImageIndex + 1)">
-                    <ArrowRight size="32" />
-                </div>
-            </div>
-        </div>
-
-        <div class="hidden sm:flex items-center h-full">
-
-            <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2 "
-                @click="changeImage(currentImageIndex - 1)">
-                <ArrowRight class="rotate-180" />
-            </div>
-
-            <div ref="carouselContainer" class="flex gap-2 overflow-x-scroll no-scrollbar " :class="initialOffset">
-                <div class="flex gap-[2px] items-center" :class="initialOffset">
-                    <div v-for="(image, idx) in images" :key="image.src"
-                        class="min-w-[200px] duration-300 border-[3px] rounded p-1 cursor-pointer"
-                        :class="idx === currentImageIndex ? 'border-[#F0BF6C] min-w-[220px]' : 'border-transparent'">
-                        <img :src="image.src" alt="" @click="changeImage(idx)" class="rounded-sm">
+                        @click="onRight(currentImageIndex + 1)">
+                        <ArrowRight size="32" />
                     </div>
                 </div>
             </div>
 
-            <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2"
-                @click="changeImage(currentImageIndex + 1)">
-                <ArrowRight />
+            <div class="hidden sm:flex items-center h-full">
+
+                <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2 "
+                    @click="onLeft(currentImageIndex - 1)">
+                    <ArrowRight class="rotate-180" />
+                </div>
+
+                <div ref="carouselContainer" class="flex gap-2 overflow-x-scroll no-scrollbar " :class="initialOffset">
+                    <div class="flex gap-[2px] items-center" :class="initialOffset">
+                        <div v-for="(image, idx) in images" :key="image.src"
+                            class="min-w-[200px] duration-300 border-[3px] rounded p-1 cursor-pointer"
+                            :class="idx === currentImageIndex ? 'border-[#F0BF6C] min-w-[220px]' : 'border-transparent'">
+                            <img :src="image.src" alt="" @click="changeImage(idx)" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer fill-[#FFFFFF] hover:fill-[#F0BF6C] duration-300 flex items-center justify-center h-[148px] mx-2"
+                    @click="onRight(currentImageIndex + 1)">
+                    <ArrowRight />
+                </div>
+
+
             </div>
-
-
         </div>
+        <CarouselModal :open="open" @close="open = false" :images="images" :currentImage="currentImage"
+            v-model:index="currentImageIndex" @index="changeImage(index)" />
     </div>
-    <CarouselModal :open="open" @close="open = false" :images="images" :currentImage="currentImage"
-        v-model:index="currentImageIndex" @index="changeImage(index)" />
 </template>
 
 <script setup>
@@ -119,6 +121,12 @@ setInitialImagesArray()
 
 const open = ref(false)
 
+const handleOpenModal = () => {
+    if (window.innerWidth >= 640) {
+        open.value = true;
+    }
+}
+
 const initialOffset = ref('')
 
 const changeImage = (idx) => {
@@ -142,9 +150,44 @@ const changeImage = (idx) => {
     }
 }
 
+const transitionName = ref('fade')
+
+const onRight = (idx) => {
+    if (window.innerWidth < 640) {
+        transitionName.value = 'right'
+    } else {
+        transitionName.value = 'fade'
+    }
+
+    if (idx > images.value.length - 1) {
+        currentImageIndex.value = 0;
+        activeImagePosition()
+
+    } else {
+        currentImageIndex.value = idx;
+        activeImagePosition()
+    }
+}
+
+const onLeft = (idx) => {
+    if (window.innerWidth < 640) {
+        transitionName.value = 'left'
+    } else {
+        transitionName.value = 'fade'
+    }
+
+    if (idx < 0) {
+        currentImageIndex.value = images.value.length - 1;
+        activeImagePosition()
+
+    } else {
+        currentImageIndex.value = idx;
+        activeImagePosition()
+    }
+}
+
+
 const carouselContainer = ref(null)
-
-
 
 const activeImagePositionVal = computed(() => {
     return currentImageIndex.value * 200;
@@ -197,5 +240,36 @@ watch(open, (val) => {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
+}
+
+.right-enter-active,
+.right-leave-active,
+.left-enter-active,
+.left-leave-active {
+    transition: all 0.2s ease;
+}
+
+.right-enter-from {
+    opacity: 0;
+    transform: translateX(100%);
+
+}
+
+.right-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+
+}
+
+.left-enter-from {
+    opacity: 0;
+    transform: translateX(-100%);
+
+}
+
+.left-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+
 }
 </style>
